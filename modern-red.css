@@ -1,72 +1,102 @@
-/* modern-red.css - A modern left-aligned red landing page style */
-body {
+* {
   margin: 0;
   padding: 0;
-  background: linear-gradient(120deg, #8e1818 60%, #8e1818 100%);
-  min-height: 100vh;
-  color: #fff;
-  font-family: 'Roboto', Arial, sans-serif;
-  position: relative;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
 }
 
-.hero-content-right {
-  position: absolute;
-  right: 7vw;
-  top: 12vh;
-  z-index: 3;
-  max-width: 600px;
-  text-align: left;
+body {
+  background-color: #f2e1dd;
+  color: #2d1b0f;
 }
-.hero-content-right h1 {
-  font-size: 4vw;
-  font-weight: 900;
-  color: #fffdfd;
-  margin-bottom: 2.5rem;
-  line-height: 1.05;
-}
-.hero-content-right p {
-  font-size: 1.5rem;
-  color: #fff;
-  margin-bottom: 2.5rem;
-  font-weight: 300;
-}
-.explore-btn {
-  display: inline-block;
-  background: #ecc04a;
-  color: #222;
-  font-size: 2rem;
-  font-weight: 500;
-  border: none;
-  border-radius: 2.5rem;
-  padding: 0.7em 2.5em;
-  text-decoration: none;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-  transition: background 0.2s, color 0.2s;
-}
-.explore-btn:hover {
-  background: #ffd966;
-  color: #000;
-}
-.circle-bg {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100vw; height: 100vh;
-  z-index: 1;
-  pointer-events: none;
+
+.hero {
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
-}
-.circle-bg img {
-  width: 70vh;
-  max-width: 40vw;
-  height: auto;
-  margin-left: 2vw;
-  margin-bottom: 0;
-  margin-top: 0;
-  opacity: 1;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
 }
 
+.hero-left {
+  flex: 1;
+}
 
+.icon-text h1 {
+  font-size: 4rem;
+  margin-top: 20px;
+}
 
+.icon-text p {
+  margin: 20px 0;
+  font-size: 1.2rem;
+  color: #4d3b36;
+}
+
+.icon-text button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  background-color: #2d1b0f;
+  color: white;
+  cursor: pointer;
+}
+
+.icon {
+  width: 80px;
+  opacity: 0.5;
+}
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boba-image-bg {
+  background-color: #ecc3ad;
+  padding: 30px;
+  border-radius: 50% 50% 50% 50% / 60% 40% 40% 60%;
+}
+
+.boba-image {
+  width: 300px;
+  border-radius: 15px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 40px 60px;
+  background-color: #f9f3f2;
+}
+
+.card {
+  background: white;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card h2 {
+  font-size: 2rem;
+  color: #2d1b0f;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #4d3b36;
+}
